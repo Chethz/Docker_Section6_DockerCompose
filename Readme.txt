@@ -1,1 +1,1 @@
-To run the application run "docker-compose up in the root folder.
+To run the application run "docker-compose up" in the root folder.

@@ -11,7 +11,7 @@ services:
     #     # MONGO_INITDB_ROOT_USERNAME: max
     #     # MONGO_INITDB_ROOT_PASSWORD: secret
 
-    backed:
+    backend:
       build: ./backend
       container_name: "bcakend-app"
       ports: 

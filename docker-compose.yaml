@@ -11,18 +11,18 @@ services:
     #     # MONGO_INITDB_ROOT_USERNAME: max
     #     # MONGO_INITDB_ROOT_PASSWORD: secret
 
-    backend:
-      build: ./backend
-      container_name: "bcakend-app"
-      ports: 
-        - '80:80'
+  backend:
+    build: ./backend
+    container_name: "bcakend-app"
+    ports:
+      - "80:80"
     volumes:
-        - logs:/app/logs
-        - ./backend:/app
-        - /app/node_modules
+      - logs:/app/logs
+      - ./backend:/app
+      - /app/node_modules
     env_file: ./env/backend.env
-    depends_on: 
-        - mongodb
+    depends_on:
+      - mongodb
 
 volumes:
   data:
